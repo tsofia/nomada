@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/verde">
+
+    <TableRow android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="50dip" >
+
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/musicCacheButton"
+            android:drawableTop="@drawable/ic_musica"
+            android:background="#3ccbcbcb"
+            android:clickable="true"
+            android:onClick="startMapWithMusic"
+            android:layout_column="1"
+            android:padding="40dp"
+            android:text="Music"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp" />
+
+        <Button
+            android:id="@+id/bookCachesButton"
+            android:drawableTop="@drawable/ic_livro"
+            android:background="#3ccbcbcb"
+            android:clickable="true"
+            android:onClick="startMapWithBook"
+            android:layout_column="2"
+            android:padding="40dp"
+            android:text="Books"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp" />
+
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mediaCacheButton"
+            android:drawableTop="@drawable/ic_multimedia"
+            android:background="#3ccbcbcb"
+            android:clickable="true"
+            android:onClick="startMapWithMedia"
+            android:layout_column="1"
+            android:padding="42dp"
+            android:text="Media"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/randomCachesButton"
+            android:drawableTop="@drawable/ic_random"
+            android:background="#3ccbcbcb"
+            android:clickable="true"
+            android:onClick="startMapWithRandom"
+            android:layout_column="2"
+            android:padding="40dp"
+            android:text="Random"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp" />
+
+    </TableRow>
+</TableLayout>

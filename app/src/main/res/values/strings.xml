@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Nomada</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="facebook">Facebook</string>
+    <string name="email">Email</string>
+    <string name="register">Register</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="title_activity_menu">Categories</string>
+    <string name="password">Password</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>New search</item>
+        <item>Profile</item>
+        <item>Found</item>
+        <item>My collection</item>
+        <item>About</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_cache_list">Cache List</string>
+    <string name="title_activity_cache_detail">Cache Detail</string>
+    <string name="title_activity_add_new_cache">Add New Cache</string>
+    <string name="title_activity_mark_as_found">Mark As Found</string>
+    <string name="title_activity_navigate">GO!</string>
+</resources>

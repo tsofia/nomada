@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="pt.ua.cm.nomada.CacheDetailActivity"
+    android:background="@drawable/mar"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/cachePhoto"
+            android:src="@drawable/ic_action_object_big"
+            android:background="#85010101" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cacheDetailTitleEditText"
+                android:layout_marginLeft="10dp"
+                android:text="Title"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cacheDetailCategoryEditText"
+                android:layout_marginLeft="10dp"
+                android:text="Category"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Description:"
+        android:id="@+id/cacheDetailDescriptionLabel"
+        android:layout_marginTop="10dp"
+        android:textColor="#3ca4bf"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/cacheDetailDescriptionEditText"
+        android:layout_gravity="center_horizontal"
+        android:lines="4"
+        android:background="#85010101"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Global rating:"
+            android:id="@+id/cacheDetailGlobalRatingLabel"
+            android:layout_marginTop="10dp"
+            android:textColor="#3ca4bf" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5.0/5.0"
+            android:id="@+id/cacheDetailGlobalRatingTextView"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Comments:"
+            android:id="@+id/cacheDetailCommentsLabel"
+            android:layout_marginTop="5dp"
+            android:textColor="#3ca4bf"
+            android:layout_marginBottom="5dp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cacheDetailCommentList"
+            android:background="#85010101"
+            android:paddingBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Navigate"
+            android:id="@+id/cacheDetailsNavigateBtn"
+            android:textColor="#3ca4bf"
+            android:background="#1cffffff"
+            android:layout_gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="navigate"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Mark as found"
+            android:id="@+id/cacheDetailsMarkAsFoundBtn"
+            android:textColor="#3ca4bf"
+            android:background="#1cffffff"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="50dp"
+            android:onClick="markAsFound"/>
+
+    </LinearLayout>
+
+</LinearLayout>

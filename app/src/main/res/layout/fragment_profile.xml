@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/verde"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/female"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:minHeight="150dp"
+        android:minWidth="150dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Change photo"
+        android:id="@+id/profileChangePhotoBtn"
+        android:textColor="#3ca4bf"
+        android:background="#1cffffff"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="register"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Change my password"
+        android:id="@+id/profileChangePwdBtn"
+        android:textColor="#3ca4bf"
+        android:background="#1cffffff"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="changePassword"
+        android:layout_gravity="left"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Change my name"
+        android:id="@+id/profileChangeNameBtn"
+        android:textColor="#3ca4bf"
+        android:background="#1cffffff"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="register"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Change my birthdate"
+        android:id="@+id/profileChangeBdayBtn"
+        android:textColor="#3ca4bf"
+        android:background="#1cffffff"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="register"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>
